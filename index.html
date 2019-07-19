@@ -1,62 +1,260 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Style is Skeleton CSS. Template by Taylor Tabb [http://tabb.me]. Originally created for SigEp CMU's personal website workshop in Spring 2019. -->
-
-
-  <!-- Basic Page Needs | You can replace your description and name with your description and name. The description may show up in search results.
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
     <meta charset="utf-8">
-    <meta name="description" content="your description"> 
-    <meta name="author" content="your name">
-
-  <!-- Mobile Specific Metas | Ensures the site looks good on mobile
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT | To pick a new font, head to https://fonts.google.com/
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
 
-  <!-- CSS | These are the stylesheets that make this site look as it does
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
 
-  <!-- Favicon | This is the little icon that shows up above the URL bar and in bookmarks
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>Diego San Miguel</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/favicon.ico">
+    <link rel="shortcut icon" sizes="32x32" href="static/favicon.ico">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/favicon.ico">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/favicon.ico">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/favicon.ico">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/favicon.ico">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/favicon.ico">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
 
   </head>
-
   <body>
 
-  <!-- Primary Page Layout | This is for you to edit! Replace Moana's info with yours :)
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-      <div class="row">
-        <div class="two-thirds column" style="margin-top: 15%">
+    <main role="main">
+      <article class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
 
-          <h1 id="title">Moana Waialiki 🏝</h1>
+        <section class="bg-black aligncenter">
+            <video class="background-video dark" autoplay muted loop poster="https://webslides.tv/static/images/working.jpg">
+              <source src="https://webslides.tv/static/videos/working.mp4" type="video/mp4">
+            </video>
+            <div class="wrap aligncenter">
+              <h1 class="text-landing" style="margin-bottom:5rem"><strong>Diego San Miguel</strong></h1>
+              <p class="text-intro">B.S. in Electrical and Computer Engineering<br>
+                Carnegie Mellon '22
+              </p>
+              <a class="button ghost" href="static/diegosanmiguel_resume.pdf" title="Download Resume">Resume</a>
+            </div>
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+                <div class="column">
+                  <h2>About Me</h2>
+                  <hr>
+                  <p>Hey, I'm Diego San Miguel, an engineering student at Carnegie Mellon, systems engineer in the CMU racecar club, member of the Sigma Phi Epsilon fraternity, and active community member
+                    passionate about Hackathons, Booth, Greek Sing, and all things that make my university unique.
+                  </p>
+                  <br />
+                  <p>
+                    Scroll down to learn more about me and feel free to reach out at <a href="mailto:diegofinni@gmail.com">diegofinni@gmail.com</a>
+                  </p>
+                </div>
+                <div class="column">
+                  <img class="aligncenter size-50"alt="me!" src="static/photos/me.jpg">
+                </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+            <div class="wrap">
+                <!-- [class*="content-"] = container max-width:50% = 600px -->
+                <div class="content-center">
+                  <h3>Skills</h3>
+                  <ul class="flexblock specs">
+                    <li>
+                      <div>
+                        <h2>
+                          <svg class="fa-code">
+                            <use xlink:href="#fa-terminal"></use>
+                          </svg>
+                          Coding
+                        </h2>
+                        Python - C - JavaScript - TypeScript
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <h2>
+                          <svg class="fa-code">
+                            <use xlink:href="#fa-desktop"></use>
+                          </svg>
+                          Software
+                        </h2>
+                        NodeJS - ReactJS - Git - Azure DevOps
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <h2>
+                          <svg class="fa-code">
+                            <use xlink:href="#fa-cogs"></use>
+                          </svg>
+                          Methodologies
+                        </h2>
+                        Agile - Scrum - GitFlow
+                      </div>
+                    </li>
+                    <li>
+                        <div>
+                          <h2>
+                            <svg class="fa-code">
+                              <use xlink:href="#fa-archive"></use>
+                            </svg>
+                            Industry Knowledge
+                          </h2>
+                          Data Structures - REST API Design - SPA Web Development
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+                <!-- end .content-center -->
+              </div>
+              <!-- .end .wrap -->
+        </section>
+        <section class="bg-black slide-top">
+        <span class="background dark" style="background-image:url('static/photos/headquarters.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1><strong>Industry</strong></h1>
+            <hr>
+          </div>
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3 style="margin-bottom:20px"><img style="height:55px; margin-right:20px; vertical-align:text-bottom" alt="logo" src="static/photos/logo.png">Software Developer Intern</h3>
+                  <p>During this past summer I interned at Phillips  66, one of the largest producers of oil in America. This was a very exciting time since the company was undergoing a
+                    digital transformation, called "Advantedge 66." I worked on an agile web development team called "Digital Customer Experience" which seeks to reimagine the customer journey
+                    for our business to businesss e-commerce by creating a differentiated and seamless experience.
+                  </p>
+                  <br />
+                  <p>During my time here I learned crucial industry methodologies such as <strong>Agile</strong>,</strong> <strong>Scrum</strong>, and <strong>GitFlow</strong>, refined my skills in web
+                    development with <strong>JavaScript</strong>, <strong>TypeScript</strong>, and <strong>React</strong> and became familiarized with <strong>Azure Devops</strong> and 
+                    several <strong>AWS</strong> services. My work primarily consisted of <strong>developing API's</strong> in API Gateway, then integrating them with Lambda functions, and 
+                    <strong>developing web pages</strong> in React and connecting them to the backend services I had created.
+                  </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column aligncenter">
+                <img style="margin-left:20px" class="size-80" alt="dcx" src="static/photos/dcx.png">
+              </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-black slide-top">
+            <span class="background dark" style="background-image:url('static/photos/code.jpg')"></span>
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap aligncenter">
+                <h1><strong>Projects</strong></h1>
+                <hr>
+              </div>
+              <div class="wrap">
+                  <div class="card-10 bg-black">
+                    <figure>
+                      <img alt="nextup" src="static/photos/nextup.png">
+                      <figcaption>
+                        <a href="https://vigneshrajmohan.github.io/" title="Vignesh Rajmohan">
+                          Logo by Vignesh Rajmohan
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                      <h4 style="margin-bottom:10px">NextUp</h4>
+                      <p>NextUp was a website that allowed people to vote on their favorite songs on a Spotify playlist to change the queue, and was developed by my team during the <a href="https://cmu15-112.github.io/Hack112/">Hack112</a> hackathon at Carnegie Mellon.<br>
+                      The website won <strong>3rd place</strong> overall and was developed using a React frontend in tandem with a Flask backend that utilized a Spotify API in Python.<br>
+                      Check out some of the code <a href="https://github.com/diegofinni/NextUp">here!</a></p>
+                    </div>
+                    <!-- end .flex-content-->
+                  </div>
+                  <!-- .end .card50 -->
+                  <br />
+                  <div class="card-10 bg-black">
+                      <div class="flex-content">
+                        <h4 style="margin-bottom:10px">Online Monopoly</h4>
+                        <p>Utilizing PyGame and sockets, I created a custom monpoly game that allowed up to four players to play on one server at once. Noteable features included the ability to save games locally so that players could leave the game and rejoin later, and real-time auctions betweeen players for properties.<br>
+                        Check out the code <a href="https://github.com/diegofinni/monopoly">here!</a></p>
+                      </div>
+                      <figure>
+                          <img alt="nextup" src="static/photos/monopoly.PNG">
+                        </figure>
+                        <!-- end figure-->
+                      <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+        </section>
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
 
-          <h5> 
-            Hi, I am Diego. ECE student at <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon</a>. Teaching Assistant for <a href="https://www.cs.cmu.edu/~112/" target="_blank">15-112</a>. And Cheif of <a href="https://www.islands.com/disney-moana-movie-inspired-polynesian-islands-south-pacific" target="_blank">Motonui</a>.
-          </h5>
-          
-          <h5>
-            I want to build tools that solve problems for people <em>and</em> and make the world easier to explore.
-          </h5>
+   <!-- A global footer
 
-          <h6>
-            <a href="resume.pdf" target="_blank">Resume</a>&nbsp &nbsp &nbsp<a href="about.html">About Me</a>
-          </h6>
-
-        </div>
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
       </div>
-    </div>
+    </footer>  -->
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
 </html>
