@@ -1,4 +1,7 @@
 # My Personal website
 
-Simple personal website that I made to showcase some of my work, education, and contact info.
-Designed using Webslides
+---
+
+Personal website that I made to showcase some of my personal projects, industry experiences, skills and interests.
+
+The website was made using WebSlides and is hosted on Github pages.
